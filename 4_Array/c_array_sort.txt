@@ -1,0 +1,15 @@
+﻿namespace c_array_sort;
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] nums = new int[9] { 23, 45, 67, 2, 34, 90, 46, 44, 12 };
+        // Array.Sort(nums);
+        // Array.Reverse(nums);
+        // Array.ForEach(nums, n => Console.WriteLine(n));
+        Console.WriteLine(nums.Min());
+        Console.WriteLine(nums.Max());
+        Console.WriteLine(nums.Sum());
+        Console.WriteLine(nums.Average());
+    }
+}

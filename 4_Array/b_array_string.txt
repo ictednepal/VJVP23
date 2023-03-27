@@ -1,0 +1,12 @@
+﻿namespace b_array_string;
+class Program
+{
+    static void Main(string[] args)
+    {
+        string[] names = { "Ram", "Sita", "Hari", "Gita", "Nita" };
+        foreach (var name in names)
+        {
+            Console.WriteLine(name);
+        }
+    }
+}

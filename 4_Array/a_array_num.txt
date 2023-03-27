@@ -1,0 +1,12 @@
+﻿namespace a_array_num;
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] marks = { 45, 67, 89, 76, 43 };
+        foreach (var mark in marks)
+        {
+            Console.Write("\t {0}", mark);
+        }
+    }
+}
