@@ -1,0 +1,34 @@
+﻿namespace a_string_name_address;
+class Program
+{
+    static void Main(string[] args)
+    {
+        // string fname = "Ram";
+        // string lname = "Thapa";
+        // string city = "Kathmandu";
+        // Console.WriteLine("{0} {1} lives in {2}.", fname, lname, city);
+        // Console.WriteLine(fname + " " + lname + " lives in " + city + ".");
+
+
+        /* string name = "Ram";
+        char[] ch = { 'N', 'E', 'P', 'A', 'L' };
+        string country = new string(ch);
+        Console.WriteLine(name);
+        Console.WriteLine(country); */
+
+
+        /* string fname = "Ram";
+        string lname = " Thapa";
+        string name = string.Concat(fname,lname);
+        Console.WriteLine(name); */
+
+        /* string name = "Sanothimi";
+        int length = name.Length;
+        Console.WriteLine(length); */
+
+
+        string name = "Sanothimi";
+        string myname = string.Copy(name);
+        Console.WriteLine(myname);
+    }
+}
