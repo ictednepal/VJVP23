@@ -1,0 +1,37 @@
+﻿namespace b_structure;
+
+struct Students
+{
+    public int roll;
+    public string fullname;
+    public string email;
+    public string faculty;
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        Students st1;
+        Students st2;
+
+        st1.roll = 34;
+        st1.fullname = "Ram Thapa";
+        st1.email = "cuteram@gmail.com";
+        st1.faculty = "Information and Communication Technology";
+
+        st2.roll = 23;
+        st2.fullname = "Sita Rai";
+        st2.email = "sita@yahoo.com";
+        st2.faculty = "Computer Engineering";
+
+        Console.WriteLine("Student 1 Roll Number =  {0}", st1.roll);
+        Console.WriteLine("Student 1 Fullname =  {0}", st1.fullname);
+        Console.WriteLine("Student 1 Email =  {0}", st1.email);
+        Console.WriteLine("Student 1 Faculty =  {0}", st1.faculty);
+
+        Console.WriteLine("Student 2 Roll Number =  {0}", st2.roll);
+        Console.WriteLine("Student 2 Fullname =  {0}", st2.fullname);
+        Console.WriteLine("Student 2 Email =  {0}", st2.email);
+        Console.WriteLine("Student 2 Faculty =  {0}", st2.faculty);
+    }
+}

@@ -1,0 +1,20 @@
+﻿namespace c_class_object;
+#nullable disable
+class Student
+{
+    int roll;
+    string name;
+    public void HelloHi()
+    {
+        Console.WriteLine("Hello Sanothimi.");
+    }
+    static void Main(string[] args)
+    {
+        Student st1 = new Student();
+        st1.roll = 45;
+        st1.name = "Ram Thapa";
+        st1.HelloHi();
+        Console.WriteLine("Roll = " + st1.roll);
+        Console.WriteLine("Name = " + st1.name);
+    }
+}

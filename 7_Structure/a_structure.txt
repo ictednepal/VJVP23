@@ -1,0 +1,20 @@
+﻿namespace a_structure;
+struct Student
+{
+    public int roll;
+
+    public void getRoll(int roll)
+    {
+        Console.WriteLine("Roll number  =" + roll);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Student s1;
+        s1.roll = 23;
+        s1.getRoll(s1.roll);
+    }
+}

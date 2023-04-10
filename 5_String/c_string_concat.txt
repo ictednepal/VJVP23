@@ -1,0 +1,11 @@
+﻿namespace c_string_concat;
+class Program
+{
+    static void Main(string[] args)
+    {
+        string fname = "Ram";
+        string lname = " Thapa";
+        string name = string.Concat(fname,lname);
+        Console.WriteLine(name);
+    }
+}

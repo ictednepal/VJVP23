@@ -1,0 +1,12 @@
+﻿namespace b_class_object;
+#nullable disable
+class Student
+{
+    int roll;
+    static void Main(string[] args)
+    {
+        Student st1 = new Student();
+        st1.roll = 45;
+        Console.WriteLine("Roll = " + st1.roll);
+    }
+}

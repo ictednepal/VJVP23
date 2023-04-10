@@ -1,0 +1,12 @@
+﻿namespace b_string_character;
+class Program
+{
+    static void Main(string[] args)
+    {
+        string name = "Ram";
+        char[] ch = { 'N', 'E', 'P', 'A', 'L' };
+        string country = new string(ch);
+        Console.WriteLine(name);
+        Console.WriteLine(country);
+    }
+}

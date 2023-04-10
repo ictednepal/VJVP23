@@ -1,0 +1,21 @@
+﻿namespace c_with_diff_parameter_sequence;
+public class Student
+{
+    public void displayDetails(int roll, string name)
+    {
+        Console.WriteLine(roll + " " + name);
+    }
+    public void displayDetails(string name, int roll)
+    {
+        Console.WriteLine(roll + " " + name);
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        Student s1 = new Student();
+        s1.displayDetails(23, "Ram");
+        s1.displayDetails("Sita", 45);
+    }
+}

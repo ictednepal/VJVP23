@@ -1,0 +1,10 @@
+﻿namespace d_string_length;
+class Program
+{
+    static void Main(string[] args)
+    {
+        string name = "Sanothimi";
+        int length = name.Length;
+        Console.WriteLine(length);
+    }
+}
