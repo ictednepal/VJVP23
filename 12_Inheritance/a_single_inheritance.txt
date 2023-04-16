@@ -1,0 +1,26 @@
+﻿namespace a_single_inheritance;
+public class ParentClass{
+    public ParentClass(){
+        Console.WriteLine("Parent Constructor");
+    }
+    public void parentMethod(){
+        Console.WriteLine("Hello from parent method");
+    }
+}
+public class ChildClass : ParentClass{
+    public ChildClass(){
+        Console.WriteLine("Child Constructor");
+    }
+    public void childMethod(){
+        Console.WriteLine("Hi from child method");
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        ChildClass c1 = new ChildClass();
+        c1.childMethod();
+        c1.parentMethod();
+    }
+}

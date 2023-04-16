@@ -1,0 +1,29 @@
+﻿namespace a_interface;
+interface ITeacher
+{
+    public void teach();
+}
+interface IStudent
+{
+    public void study();
+}
+public class College : ITeacher, IStudent
+{
+    public void teach()
+    {
+        Console.WriteLine("Teacher is teaching");
+    }
+    public void study()
+    {
+        Console.WriteLine("Student is studying");
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        College c1 = new College();
+        c1.teach();
+        c1.study();
+    }
+}

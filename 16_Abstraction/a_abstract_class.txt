@@ -1,0 +1,21 @@
+﻿namespace a_abstract_class;
+
+public abstract class MyClass{
+    public int add(int a, int b){
+        return (a+b);
+    }
+}
+public class YourClass : MyClass{
+    public int pro(int a, int b){
+        return (a*b);
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        YourClass obj = new YourClass();
+        int result = obj.add(20,30);
+        Console.WriteLine("The result = {0}", result);
+    }
+}

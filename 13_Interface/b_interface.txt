@@ -1,0 +1,30 @@
+﻿namespace b_interface;
+interface ITeacher
+{
+    public void address();
+}
+interface IStudent
+{
+    public void address();
+}
+public class College : ITeacher, IStudent
+{
+    void ITeacher.address()
+    {
+        Console.WriteLine("Bhaktapur");
+    }
+    void IStudent.address()
+    {
+        Console.WriteLine("Swoyambhu");
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        ITeacher c1 = new College();
+        IStudent c2 = new College();
+        c1.address();
+        c2.address();
+    }
+}
