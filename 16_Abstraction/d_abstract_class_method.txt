@@ -1,0 +1,44 @@
+﻿namespace d_abstract_class_method;
+
+public abstract class NetflixPlan
+{
+    protected double rate;
+    public abstract void getdata();
+    public void calculate(int units)
+    {
+        Console.Write("Amount for " + units + " unit is = Rs. ");
+        Console.WriteLine(rate * units);
+    }
+}
+
+class GoldUserPlan : NetflixPlan
+{
+    public override void getdata()
+    {
+        rate = 2.50;
+    }
+}
+class DiamondUserPlan : NetflixPlan
+{
+    public override void getdata()
+    {
+        rate = 5.0;
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        NetflixPlan user;
+        Console.WriteLine("GoldUser Plan");
+        Console.WriteLine("-------------");
+        user = new GoldUserPlan();
+        user.getdata();
+        user.calculate(345);
+        Console.WriteLine("DiamondUser Plan");
+        Console.WriteLine("----------------");
+        user = new DiamondUserPlan();
+        user.getdata();
+        user.calculate(234);
+    }
+}

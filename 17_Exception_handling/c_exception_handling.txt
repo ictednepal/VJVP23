@@ -1,0 +1,21 @@
+﻿namespace c_exception_handling;
+class Program
+{
+    public int divide(int a, int b)
+    {
+        int c = a / b;
+        return c;
+    }
+    static void Main(string[] args)
+    {
+        Program p1 = new Program();
+        try
+        {
+            Console.WriteLine(p1.divide(10, 0));
+        }
+        catch (Exception)
+        {
+            Console.WriteLine("Cannot divide by zero.");
+        }
+    }
+}
