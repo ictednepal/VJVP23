@@ -1,0 +1,27 @@
+﻿namespace h_exception_handling_user_defined;
+
+class InvalidVoter : Exception
+{
+    public InvalidVoter(string message) : base(message) { }
+}
+class Program
+{
+    static void ageValidate(int age)
+    {
+        if (age < 18)
+        {
+            throw new InvalidVoter("Timro vote cast garne bela bhako xaina hai !");
+        }
+    }
+    static void Main(string[] args)
+    {
+        try
+        {
+            ageValidate(10);
+        }
+        catch (InvalidVoter e)
+        {
+            Console.WriteLine(e);
+        }
+    }
+}

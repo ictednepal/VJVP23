@@ -1,0 +1,9 @@
+﻿namespace e_exception_handling;
+class Program
+{
+    static string[] names = { "Ram", "Sita", "Laxman" };
+    static void Main(string[] args)
+    {
+        Console.WriteLine(names[3]);
+    }
+}
